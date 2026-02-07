@@ -1,0 +1,23 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #1db954, #191414);
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player {
+  background: rgba(0,0,0,0.4);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
