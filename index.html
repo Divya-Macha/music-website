@@ -2,74 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Music Player</title>
-
-    <style>
-        body {
-            margin: 0;
-            height: 100vh;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: Arial, sans-serif;
-            color: white;
-        }
-
-        .player {
-            text-align: center;
-            background: rgba(0, 0, 0, 0.25);
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
-        }
-
-        button {
-            padding: 15px 30px;
-            font-size: 18px;
-            border: none;
-            border-radius: 30px;
-            cursor: pointer;
-        }
-
-        .credit {
-            margin-top: 15px;
-            font-size: 12px;
-            opacity: 0.8;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Musibc</title>
+    <iframe width="0" height="0" src="https://www.youtuberepeater.com/watch?v=BtVugvboad0#gsc.tab=0
+" frameborder="0" allowfullscreen></iframe>
+    <link rel="stylesheet" href="style.css">
+    <iframe width="0" height="0" src="http://youtuberepeater.com/" frameborder="0" allowfullscreen></iframe>
 </head>
 <body>
+    <h1>Welcome to My Website</h1>
+    <p>This is a sample webpage to demonstrate HTML structure.</p>
+    <button id="clickMe">Click Me!</button>
 
-<div class="player">
-    <h1>🎵 Now Playing</h1>
-
-    <audio id="music">
-        <source src="AXIS1156_24_Love Storm_60.wav" type="audio/wav">
-        Your browser does not support the audio element.
-    </audio>
-
-    <button onclick="toggleMusic()">▶ Play</button>
-
-    <div class="credit">
-        Music: AXIS1156-24 Love Storm — Royalty Free Music Library
-    </div>
-</div>
-
-<script>
-    const music = document.getElementById("music");
-    const button = document.querySelector("button");
-
-    function toggleMusic() {
-        if (music.paused) {
-            music.play();
-            button.textContent = "⏸ Pause";
-        } else {
-            music.pause();
-            button.textContent = "▶ Play";
-        }
-    }
-</script>
-
+    <script src="script.js"></script>
 </body>
 </html>
